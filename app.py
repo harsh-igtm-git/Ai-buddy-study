@@ -2,6 +2,51 @@
 import os
 import streamlit as st
 from openai import OpenAI
+import streamlit as st
+
+# 🎨 Custom CSS for background + text colors
+page_bg = """
+<style>
+/* Change the background of the entire app */
+.stApp {
+    background: linear-gradient(to right, #dbeafe, #f0f8ff); 
+    /* soft blue gradient */
+}
+
+/* Change heading colors */
+h1, h2, h3 {
+    color: #1a73e8;  /* Google Blue */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Change normal text */
+p, div, label {
+    color: #111111;  /* Dark text */
+    font-size: 16px;
+}
+
+/* Style the input box */
+.stTextInput>div>div>input {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    border: 2px solid #1a73e8;
+    padding: 8px;
+}
+
+/* Style buttons */
+.stButton>button {
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+}
+</style>
+"""
+st.markdown(page_bg, unsafe_allow_html=True)
 
 # --- Page config
 st.set_page_config(page_title="AI Study Buddy", page_icon="🎓", layout="centered")
