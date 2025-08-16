@@ -10,12 +10,12 @@ page_bg = """
 /* Change the background of the entire app */
 .stApp {
     background: linear-gradient(to right, #dbeafe, #f0f8ff); 
-    /* soft blue gradient */
+    /* soft black gradient */
 }
 
 /* Change heading colors */
 h1, h2, h3 {
-    color: #1a73e8;  /* Google Blue */
+    color: #1a73e8;  /* Google black */
     text-align: center;
     font-family: 'Arial', sans-serif;
 }
@@ -38,7 +38,7 @@ p, div, label {
 /* Style buttons */
 .stButton>button {
     background-color: #1a73e8;
-    color: white;
+    color: black;
     border-radius: 12px;
     padding: 8px 16px;
     font-size: 16px;
